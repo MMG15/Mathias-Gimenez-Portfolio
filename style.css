@@ -1,28 +1,109 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
   color: #333;
 }
 
-header, footer {
-  background-color: #222;
+header {
+  background-color: #1e2a38;
   color: white;
   text-align: center;
-  padding: 1em;
+  padding: 2em 1em;
 }
 
-section {
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.6em 1.2em;
+  background-color: #00aaff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+main {
   padding: 2em;
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
+}
+
+h2 {
+  color: #1e2a38;
+  border-bottom: 2px solid #00aaff;
+  padding-bottom: 0.3em;
+}
+
+.skills {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.skills li {
+  background-color: #e0f7ff;
+  padding: 0.8em;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .project {
   background-color: white;
   padding: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
   border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
+
+.project a {
+  display: inline-block;
+  margin-top: 0.5em;
+  color: #00aaff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #1e2a38;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  .skills {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  main {
+    padding: 1em;
+  }
+
+  .btn {
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+  }
+}
+
