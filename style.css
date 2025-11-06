@@ -1,16 +1,16 @@
-/* 🌐 Scroll suave */
+/* Scroll suave */
 html {
   scroll-behavior: smooth;
 }
 
-/* 🎯 Botón hover */
+/* Botón hover */
 .btn:hover {
   background-color: #0077cc;
   box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
   transition: all 0.3s ease;
 }
 
-/* ✨ Animación de entrada */
+/*  Animación de entrada */
 section {
   animation: fadeIn 0.8s ease-in;
 }
@@ -20,7 +20,7 @@ section {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* 🧱 Estructura base */
+/*  Estructura base */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -113,7 +113,7 @@ footer {
   margin-top: 2em;
 }
 
-/* 📱 Responsive */
+/* Responsive */
 @media (max-width: 768px) {
   header h1 {
     font-size: 2em;
@@ -133,20 +133,3 @@ footer {
   }
 }
 
-/* 🌙 Modo oscuro */
-body.dark-mode {
-  background-color: #121212;
-  color: #eee;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-body.dark-mode header,
-body.dark-mode footer {
-  background-color: #1e1e1e;
-}
-
-body.dark-mode .btn {
-  background-color: #00aaff !important;
-  color: white !important;
-  box-shadow: 0 0 8px rgba(0, 170, 255, 0.3);
-}
