@@ -12,8 +12,6 @@
     <h1>Mathias Giménez</h1>
     <p>Desarrollador de Software | Analista de Datos</p>
     <a href="#contacto" class="btn">Contactame</a>
-    <button onclick="toggleDarkMode()" class="btn" aria-label="Activar modo oscuro">Modo oscuro</button>
-
   </header>
 
   <main>
@@ -34,16 +32,16 @@
       </ul>
     </section>
 
-  <section>
-    <h2>Proyectos destacados</h2>
-    <ul>
-      <li><a href="https://disei.com.ar" target="_blank">Disei Constructora</a> – Sitio institucional con branding profesional.</li>
-      <li><a href="https://sites.google.com/view/allinqara/inicio" target="_blank">Allinqara Minera Textil</a> – Landing visual con catálogo.</li>
-      <li><a href="https://sites.google.com/view/nmindumentaria/inicio" target="_blank">NM Indumentaria</a> – Diseño web para marca textil.</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Proyectos destacados</h2>
+      <ul>
+        <li><a href="https://disei.com.ar" target="_blank">Disei Constructora</a> – Sitio institucional con branding profesional.</li>
+        <li><a href="https://sites.google.com/view/allinqara/inicio" target="_blank">Allinqara Minera Textil</a> – Landing visual con catálogo.</li>
+        <li><a href="https://sites.google.com/view/nmindumentaria/inicio" target="_blank">NM Indumentaria</a> – Diseño web para marca textil.</li>
+      </ul>
+    </section>
 
-  <section id="contacto">
+    <section id="contacto">
       <h2>Contacto</h2>
       <p>Email: <a href="mailto:mathias.mgn@gmail.com">mathias.mgn@gmail.com</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/mathiasgimenez" target="_blank">Perfil profesional</a></p>
@@ -51,15 +49,14 @@
   </main>
 
   <footer>
-    <button onclick="toggleDarkMode()" class="btn">Modo oscuro</button>
-
+    <button onclick="toggleDarkMode()" class="btn" aria-label="Activar modo oscuro">Modo oscuro</button>
     <p>© 2025 Mathias Giménez</p>
   </footer>
-  <script>
-  const toggleDarkMode = () => {
-    document.body.classList.toggle('dark-mode');
-  };
-</script>
 
+  <script>
+    const toggleDarkMode = () => {
+      document.body.classList.toggle('dark-mode');
+    };
+  </script>
 </body>
 </html>
