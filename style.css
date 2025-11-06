@@ -1,3 +1,42 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.btn:hover {
+  background-color: #0077cc;
+  box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+section {
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.btn {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .btn {
+  background-color: #00aaff;
+  color: white;
+}
+
+
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
