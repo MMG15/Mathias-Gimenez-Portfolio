@@ -12,6 +12,8 @@
     <h1>Mathias Giménez</h1>
     <p>Desarrollador de Software | Analista de Datos</p>
     <a href="#contacto" class="btn">Contactame</a>
+    <button onclick="toggleDarkMode()" class="btn" aria-label="Activar modo oscuro">Modo oscuro</button>
+
   </header>
 
   <main>
@@ -49,7 +51,15 @@
   </main>
 
   <footer>
+    <button onclick="toggleDarkMode()" class="btn">Modo oscuro</button>
+
     <p>© 2025 Mathias Giménez</p>
   </footer>
+  <script>
+  const toggleDarkMode = () => {
+    document.body.classList.toggle('dark-mode');
+  };
+</script>
+
 </body>
 </html>
