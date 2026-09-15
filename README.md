@@ -4,14 +4,16 @@ Bienvenido a mi portafolio como Desarrollador de Software y Analista de Datos. E
 
 ## 🚀 ¿Qué vas a encontrar?
 
-- Presentación personal y experiencia laboral
+- Presentación personal y línea de tiempo de experiencia laboral
 - Proyectos destacados con enlaces activos
-- Habilidades técnicas y visuales
+- Habilidades técnicas agrupadas por categoría
+- CV descargable en PDF
+- Modo oscuro / claro
 - Información de contacto
 
 ## 🧠 Tecnologías utilizadas
 
-- HTML y CSS
+- HTML, CSS y JavaScript
 - Responsive Design
 - Google Sites y Canva (en proyectos específicos)
 - GitHub Pages para despliegue
