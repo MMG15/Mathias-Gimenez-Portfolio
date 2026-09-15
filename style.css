@@ -450,6 +450,10 @@ main > section:first-child h2 {
   margin-bottom: 0.3em;
 }
 
+.timeline-tags {
+  margin: 1em 0 0;
+}
+
 /* 🧠 Habilidades */
 .skills-groups {
   display: grid;
@@ -612,6 +616,23 @@ main > section:first-child h2 {
 }
 
 /* 📬 Contacto */
+.availability {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6em;
+  background-color: rgba(0, 170, 255, 0.08);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.9em 1.1em;
+  color: var(--text-muted);
+  max-width: 700px;
+}
+
+.availability .icon {
+  color: var(--accent);
+  margin-top: 0.2em;
+}
+
 .contact-links {
   display: flex;
   gap: 1em;
