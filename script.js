@@ -16,16 +16,20 @@ navLinks.querySelectorAll('a').forEach((link) => {
 
 // Modo oscuro con preferencia guardada
 const themeToggle = document.getElementById('themeToggle');
+const iconSun = document.getElementById('iconSun');
+const iconMoon = document.getElementById('iconMoon');
 const root = document.documentElement;
 const storedTheme = localStorage.getItem('theme');
 
 function applyTheme(theme) {
   if (theme === 'dark') {
     root.setAttribute('data-theme', 'dark');
-    themeToggle.textContent = '☀️';
+    iconSun.hidden = true;
+    iconMoon.hidden = false;
   } else {
     root.removeAttribute('data-theme');
-    themeToggle.textContent = '🌙';
+    iconSun.hidden = false;
+    iconMoon.hidden = true;
   }
 }
 
@@ -38,3 +42,24 @@ themeToggle.addEventListener('click', () => {
   applyTheme(next);
   localStorage.setItem('theme', next);
 });
+
+// Animación de aparición al hacer scroll
+const revealEls = document.querySelectorAll('.reveal');
+
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+
+  revealEls.forEach((el) => observer.observe(el));
+} else {
+  revealEls.forEach((el) => el.classList.add('in-view'));
+}
