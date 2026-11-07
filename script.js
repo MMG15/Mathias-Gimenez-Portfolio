@@ -182,8 +182,16 @@ const EN = {
   'Educación': 'Academic background',
   'Tecnicatura en Desarrollo de Software': 'Associate Degree in Software Development',
   'Cursos y certificaciones': 'Courses & certifications',
+  'Visualización de datos': 'Data visualization',
+  'Inteligencia Artificial · Anthropic Academy': 'Artificial Intelligence · Anthropic Academy',
+  'Desarrollo de software con Claude Code': 'Software development with Claude Code',
+  'Integración de Claude en aplicaciones': 'Integrating Claude into applications',
+  'Conexión de la IA con herramientas externas': 'Connecting AI to external tools',
+  'Uso eficaz y responsable de la IA': 'Effective and responsible use of AI',
   'Idiomas': 'Languages',
-  'Español (nativo) · Inglés B2': 'Spanish (native) · English B2',
+  'Español': 'Spanish',
+  'Inglés': 'English',
+  'Nativo': 'Native',
   'Inglés en Instituto Saint Paul · Comprensión oral y escrita avanzada': 'English studied at Instituto Saint Paul · Advanced listening and reading comprehension',
 
   // Contacto
