@@ -100,7 +100,7 @@ const EN = {
 
   // Experiencia
   'Enero 2025 — Diciembre 2025': 'January 2025 — December 2025',
-  'Enero 2026 — Julio 2027': 'January 2026 — July 2027',
+  'Enero 2026 — Presente': 'January 2026 — Present',
   'Desarrollador Full Stack': 'Full Stack Developer',
   'Laboratorio de Control de Calidad Dr. Alberto Graffigna (UCCuyo) · San Juan — Proyecto: SAL, Sistema de Seguimiento de Análisis de Laboratorio':
     'Dr. Alberto Graffigna Quality Control Laboratory (UCCuyo) · San Juan — Project: SAL, Laboratory Analysis Tracking System',
