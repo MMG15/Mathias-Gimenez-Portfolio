@@ -78,12 +78,17 @@ const EN = {
 
   // Encabezado
   'Hola, soy': "Hi, I'm",
-  'Técnico en Desarrollo de Software · Analista Funcional': 'Software Development Technician · Functional Analyst',
+  'Bajar': 'Scroll down',
   'Combino relevamiento funcional, documentación técnica y análisis de datos para traducir necesidades de negocio en requerimientos claros e implementaciones trazables.':
     'I combine requirements gathering, technical documentation and data analysis to turn business needs into clear requirements and traceable implementations.',
   'Análisis Funcional': 'Functional Analysis',
   'Ver proyectos': 'View projects',
   'Descargar CV': 'Download CV',
+
+  // Números destacados
+  'Años de experiencia': 'Years of experience',
+  'Herramientas': 'Tools',
+  'Empresas IT': 'IT companies',
 
   // Sobre mí
   'Técnico en Desarrollo de Software con experiencia en análisis funcional, desarrollo de soluciones orientadas a datos e integración de sistemas. Actualmente participo en la modernización del Sistema de Gestión de Laboratorios Graffigna desde Disei SRL, donde lidero relevamientos funcionales, documentación de casos de uso y validación de módulos. Combino mi perfil técnico con habilidades de relevamiento y comunicación con usuarios clave, lo que me permite traducir necesidades de negocio en requerimientos funcionales claros y en implementaciones trazables.':
@@ -168,6 +173,9 @@ const EN = {
   'Consultor BI': 'BI Consultant',
   'o': 'or',
   '— remoto, híbrido en San Juan o con relocación a Mendoza.': '— remote, hybrid in San Juan, or relocating to Mendoza.',
+  'Desarrollador de Software · Analista Funcional': 'Software Developer · Functional Analyst',
+  'Conectar en LinkedIn': 'Connect on LinkedIn',
+  'Conectemos': "Let's connect",
 };
 
 const metaDescription = document.querySelector('meta[name="description"]');
@@ -209,6 +217,7 @@ function applyLang(lang) {
   root.setAttribute('lang', lang);
   langToggle.textContent = en ? 'ES' : 'EN';
   langToggle.setAttribute('aria-label', en ? 'Cambiar a español' : 'Switch to English');
+  document.dispatchEvent(new CustomEvent('langchange', { detail: lang }));
 }
 
 // Idioma inicial: ?lang=en en la URL, después la elección guardada,
@@ -226,4 +235,148 @@ langToggle.addEventListener('click', () => {
   currentLang = currentLang === 'en' ? 'es' : 'en';
   applyLang(currentLang);
   try { localStorage.setItem('lang', currentLang); } catch { /* sin almacenamiento: no pasa nada */ }
+});
+
+// ===================================================
+// Movimiento
+// ===================================================
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// Rol que se escribe y se borra solo, en el idioma elegido
+const ROLES = {
+  es: ['Desarrollador de Software', 'Analista Funcional', 'Analista de Datos'],
+  en: ['Software Developer', 'Functional Analyst', 'Data Analyst'],
+};
+const typedRole = document.getElementById('typedRole');
+let typingTimer;
+
+function startTyping() {
+  clearTimeout(typingTimer);
+  const roles = ROLES[currentLang];
+  if (reduceMotion) {
+    typedRole.textContent = roles[0];
+    return;
+  }
+  let word = 0;
+  let chars = roles[0].length;
+  let deleting = true;
+  typedRole.textContent = roles[0];
+
+  function step() {
+    if (deleting) {
+      chars -= 1;
+      if (chars === 0) {
+        deleting = false;
+        word = (word + 1) % roles.length;
+      }
+    } else {
+      chars += 1;
+    }
+    typedRole.textContent = roles[word].slice(0, chars);
+
+    let delay = deleting ? 45 : 85;
+    if (!deleting && chars === roles[word].length) {
+      deleting = true;
+      delay = 2200; // pausa con la palabra completa
+    } else if (!deleting && chars === 0) {
+      delay = 300;
+    }
+    typingTimer = setTimeout(step, delay);
+  }
+  typingTimer = setTimeout(step, 2600);
+}
+
+startTyping();
+document.addEventListener('langchange', startTyping);
+
+// Las tarjetas de cada grilla aparecen una detrás de otra
+document.querySelectorAll('.highlights, .skills-groups, .projects-grid, .formacion-grid, .stats')
+  .forEach((grid) => {
+    grid.classList.add('stagger');
+    [...grid.children].forEach((child, i) => child.style.setProperty('--i', i));
+  });
+
+// Números que cuentan desde 0 al aparecer
+function countUp(el) {
+  const target = Number(el.dataset.count);
+  const suffix = el.dataset.suffix || '';
+  if (reduceMotion) return;
+  const duration = 1400;
+  const start = performance.now();
+  function frame(now) {
+    const progress = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    el.textContent = Math.round(target * eased) + suffix;
+    if (progress < 1) requestAnimationFrame(frame);
+  }
+  el.textContent = '0' + suffix;
+  requestAnimationFrame(frame);
+}
+
+const statsEl = document.querySelector('.stats');
+if (statsEl && 'IntersectionObserver' in window) {
+  const statsObserver = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      statsEl.querySelectorAll('.stat-num').forEach(countUp);
+      statsObserver.disconnect();
+    }
+  }, { threshold: 0.5 });
+  statsObserver.observe(statsEl);
+}
+
+// Barra de progreso, navbar al bajar y botón flotante de LinkedIn
+const progressBar = document.getElementById('scrollProgress');
+const navbar = document.querySelector('.navbar');
+const liFab = document.getElementById('liFab');
+const hero = document.getElementById('inicio');
+let ticking = false;
+
+function onScroll() {
+  const max = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = max > 0 ? window.scrollY / max : 0;
+  progressBar.style.transform = `scaleX(${progress})`;
+  navbar.classList.toggle('scrolled', window.scrollY > 10);
+  liFab.classList.toggle('visible', window.scrollY > hero.offsetHeight * 0.6);
+  ticking = false;
+}
+
+window.addEventListener('scroll', () => {
+  if (!ticking) {
+    requestAnimationFrame(onScroll);
+    ticking = true;
+  }
+}, { passive: true });
+onScroll();
+
+// Marca en el menú la sección que se está viendo
+const navAnchors = [...navLinks.querySelectorAll('a')];
+if ('IntersectionObserver' in window) {
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      navAnchors.forEach((a) => a.classList.toggle('active', a.getAttribute('href') === `#${entry.target.id}`));
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  document.querySelectorAll('header[id], section[id]').forEach((sec) => sectionObserver.observe(sec));
+}
+
+// Tarjetas de proyecto: se inclinan y se iluminan siguiendo el mouse
+const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+document.querySelectorAll('.project').forEach((card) => {
+  card.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    card.style.setProperty('--mx', `${x}px`);
+    card.style.setProperty('--my', `${y}px`);
+    if (reduceMotion || !finePointer) return;
+    const rotateY = ((x / rect.width) - 0.5) * 8;
+    const rotateX = (0.5 - (y / rect.height)) * 8;
+    card.classList.add('tilting');
+    card.style.transform = `perspective(900px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+  });
+  card.addEventListener('mouseleave', () => {
+    card.classList.remove('tilting');
+    card.style.transform = '';
+  });
 });

@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
   <nav class="navbar">
     <div class="nav-container">
       <a href="#inicio" class="nav-logo">MG</a>
@@ -37,11 +38,16 @@
   </nav>
 
   <header id="inicio">
-    <div class="header-bg" aria-hidden="true"></div>
+    <div class="header-bg" aria-hidden="true">
+      <span class="blob blob-1"></span>
+      <span class="blob blob-2"></span>
+      <span class="blob blob-3"></span>
+      <span class="header-grid"></span>
+    </div>
     <div class="header-content">
       <p class="header-greeting">Hola, soy</p>
       <h1>Mathias Giménez</h1>
-      <p class="header-role">Técnico en Desarrollo de Software · Analista Funcional</p>
+      <p class="header-role"><span id="typedRole">Desarrollador de Software</span><span class="caret" aria-hidden="true"></span></p>
       <p class="header-tagline">Combino relevamiento funcional, documentación técnica y análisis de datos para traducir necesidades de negocio en requerimientos claros e implementaciones trazables.</p>
 
       <div class="header-pills">
@@ -72,9 +78,17 @@
         <a href="https://github.com/MMG15" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
       </div>
     </div>
+    <a href="#sobre-mi" class="scroll-cue" aria-label="Bajar"><span></span></a>
   </header>
 
   <main>
+    <div class="stats reveal">
+      <div class="stat"><span class="stat-num" data-count="2" data-suffix="+">2+</span><span class="stat-label">Años de experiencia</span></div>
+      <div class="stat"><span class="stat-num" data-count="7">7</span><span class="stat-label">Proyectos</span></div>
+      <div class="stat"><span class="stat-num" data-count="30" data-suffix="+">30+</span><span class="stat-label">Herramientas</span></div>
+      <div class="stat"><span class="stat-num" data-count="2">2</span><span class="stat-label">Empresas IT</span></div>
+    </div>
+
     <section id="sobre-mi" class="reveal">
       <h2>Sobre mí</h2>
       <p>Técnico en Desarrollo de Software con experiencia en análisis funcional, desarrollo de soluciones orientadas a datos e integración de sistemas. Actualmente participo en la modernización del Sistema de Gestión de Laboratorios Graffigna desde Disei SRL, donde lidero relevamientos funcionales, documentación de casos de uso y validación de módulos. Combino mi perfil técnico con habilidades de relevamiento y comunicación con usuarios clave, lo que me permite traducir necesidades de negocio en requerimientos funcionales claros y en implementaciones trazables.</p>
@@ -167,6 +181,9 @@
             <span>Requirements Gathering</span><span>Functional Documentation</span><span>Process Mapping</span><span>Use Case Design</span><span>Pruebas de software</span><span>Active Collab</span><span>Git</span><span>GitHub</span><span>pytest</span>
           </div>
         </div>
+      </div>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track"><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg" alt="" width="22" height="22" loading="lazy">Python</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/csharp/csharp-original.svg" alt="" width="22" height="22" loading="lazy">C#</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg" alt="" width="22" height="22" loading="lazy">JavaScript</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/html5/html5-original.svg" alt="" width="22" height="22" loading="lazy">HTML5</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/css3/css3-original.svg" alt="" width="22" height="22" loading="lazy">CSS3</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/react/react-original.svg" alt="" width="22" height="22" loading="lazy">React</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/nodejs/nodejs-original.svg" alt="" width="22" height="22" loading="lazy">Node.js</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/dotnetcore/dotnetcore-original.svg" alt="" width="22" height="22" loading="lazy">.NET</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/fastapi/fastapi-original.svg" alt="" width="22" height="22" loading="lazy">FastAPI</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/postgresql/postgresql-original.svg" alt="" width="22" height="22" loading="lazy">PostgreSQL</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="" width="22" height="22" loading="lazy">SQL Server</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mysql/mysql-original.svg" alt="" width="22" height="22" loading="lazy">MySQL</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mariadb/mariadb-original.svg" alt="" width="22" height="22" loading="lazy">MariaDB</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mongodb/mongodb-original.svg" alt="" width="22" height="22" loading="lazy">MongoDB</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/firebase/firebase-original.svg" alt="" width="22" height="22" loading="lazy">Firebase</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/sqlalchemy/sqlalchemy-original.svg" alt="" width="22" height="22" loading="lazy">SQLAlchemy</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/pytest/pytest-original.svg" alt="" width="22" height="22" loading="lazy">pytest</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/git/git-original.svg" alt="" width="22" height="22" loading="lazy">Git</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/vscode/vscode-original.svg" alt="" width="22" height="22" loading="lazy">VS Code</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg" alt="" width="22" height="22" loading="lazy">Python</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/csharp/csharp-original.svg" alt="" width="22" height="22" loading="lazy">C#</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg" alt="" width="22" height="22" loading="lazy">JavaScript</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/html5/html5-original.svg" alt="" width="22" height="22" loading="lazy">HTML5</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/css3/css3-original.svg" alt="" width="22" height="22" loading="lazy">CSS3</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/react/react-original.svg" alt="" width="22" height="22" loading="lazy">React</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/nodejs/nodejs-original.svg" alt="" width="22" height="22" loading="lazy">Node.js</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/dotnetcore/dotnetcore-original.svg" alt="" width="22" height="22" loading="lazy">.NET</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/fastapi/fastapi-original.svg" alt="" width="22" height="22" loading="lazy">FastAPI</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/postgresql/postgresql-original.svg" alt="" width="22" height="22" loading="lazy">PostgreSQL</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="" width="22" height="22" loading="lazy">SQL Server</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mysql/mysql-original.svg" alt="" width="22" height="22" loading="lazy">MySQL</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mariadb/mariadb-original.svg" alt="" width="22" height="22" loading="lazy">MariaDB</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mongodb/mongodb-original.svg" alt="" width="22" height="22" loading="lazy">MongoDB</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/firebase/firebase-original.svg" alt="" width="22" height="22" loading="lazy">Firebase</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/sqlalchemy/sqlalchemy-original.svg" alt="" width="22" height="22" loading="lazy">SQLAlchemy</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/pytest/pytest-original.svg" alt="" width="22" height="22" loading="lazy">pytest</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/git/git-original.svg" alt="" width="22" height="22" loading="lazy">Git</span><span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/vscode/vscode-original.svg" alt="" width="22" height="22" loading="lazy">VS Code</span></div>
       </div>
     </section>
 
@@ -280,8 +297,22 @@
       <p>¿Tenés un proyecto en mente o una oportunidad para conversar? Escribime.</p>
       <p class="availability">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12,6 12,12 16,14"></polyline></svg>
-        Abierto a oportunidades como <strong>Analista Funcional</strong>, <strong>Full Stack Ssr</strong>, <strong>Data Analyst</strong> o <strong>Consultor BI</strong> — remoto, híbrido en San Juan o con relocación a Mendoza.
+        <span>Abierto a oportunidades como <strong>Analista Funcional</strong>, <strong>Full Stack Ssr</strong>, <strong>Data Analyst</strong> o <strong>Consultor BI</strong> — remoto, híbrido en San Juan o con relocación a Mendoza.</span>
       </p>
+      <div class="linkedin-card">
+        <div class="li-banner" aria-hidden="true"></div>
+        <div class="li-body">
+          <div class="li-avatar" aria-hidden="true">MG</div>
+          <div class="li-info">
+            <p class="li-name">Mathias Giménez</p>
+            <p class="li-title">Desarrollador de Software · Analista Funcional</p>
+            <p class="li-location">San Juan, Argentina</p>
+          </div>
+          <a href="https://www.linkedin.com/in/mathias-gim%C3%A9nez/" target="_blank" rel="noopener" class="btn btn-linkedin">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg> Conectar en LinkedIn
+          </a>
+        </div>
+      </div>
       <div class="contact-links">
         <a href="mailto:mathias.mgn@gmail.com" class="btn btn-primary">
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
@@ -302,6 +333,10 @@
       </div>
     </section>
   </main>
+
+  <a href="https://www.linkedin.com/in/mathias-gim%C3%A9nez/" target="_blank" rel="noopener" class="li-fab" id="liFab" aria-label="LinkedIn">
+    <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg><span class="li-fab-text">Conectemos</span>
+  </a>
 
   <footer>
     <p>© 2025 Mathias Giménez · San Juan, Argentina</p>
