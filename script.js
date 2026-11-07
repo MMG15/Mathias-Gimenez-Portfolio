@@ -167,12 +167,11 @@ const EN = {
   // Contacto
   '¿Tenés un proyecto en mente o una oportunidad para conversar? Escribime.':
     'Have a project in mind or an opportunity to talk about? Get in touch.',
-  'Abierto a oportunidades como': 'Open to opportunities as',
+  'Disponible para nuevos desafíos profesionales': 'Available for new professional opportunities',
   'Analista Funcional': 'Functional Analyst',
-  'Full Stack Ssr': 'Mid-level Full Stack Developer',
+  'Full Stack Semi Senior': 'Mid-level Full Stack Developer',
   'Consultor BI': 'BI Consultant',
-  'o': 'or',
-  '— remoto, híbrido en San Juan o con relocación a Mendoza.': '— remote, hybrid in San Juan, or relocating to Mendoza.',
+  'Remoto · Híbrido en San Juan · Disponibilidad para relocalización': 'Remote · Hybrid in San Juan · Open to relocation',
   'Desarrollador de Software · Analista Funcional': 'Software Developer · Functional Analyst',
   'Conectar en LinkedIn': 'Connect on LinkedIn',
   'Conectemos': "Let's connect",

@@ -651,20 +651,78 @@ main > section:first-child h2 {
 
 /* 📬 Contacto */
 .availability {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.6em;
-  background-color: rgba(0, 170, 255, 0.08);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 0.9em 1.1em;
-  color: var(--text-muted);
+  margin-top: 1.2em;
   max-width: 700px;
+  background: linear-gradient(135deg, rgba(0, 170, 255, 0.08), rgba(123, 92, 255, 0.08));
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 12px;
+  padding: 1.2em 1.4em;
 }
 
-.availability .icon {
+.availability p {
+  margin: 0;
+}
+
+.availability-head {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.status-dot {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #22c55e;
+  flex-shrink: 0;
+}
+
+.status-dot::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #22c55e;
+  animation: pulse 2s ease-out infinite;
+}
+
+.role-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin: 0.9em 0;
+}
+
+.role-chips span {
+  padding: 0.4em 0.9em;
+  border-radius: 999px;
+  background-color: var(--bg-alt);
+  border: 1px solid var(--border);
+  font-weight: 600;
+  font-size: 0.9em;
+  color: var(--text);
+}
+
+.role-chips span:first-child {
+  border-color: var(--accent);
   color: var(--accent);
-  margin-top: 0.2em;
+}
+
+.availability-mode {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  color: var(--text-muted);
+  font-size: 0.92em;
+}
+
+.availability-mode .icon {
+  color: var(--accent);
 }
 
 .contact-links {
