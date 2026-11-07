@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 130">
+  <!-- Cinta superior -->
+  <path d="M14 18 Q60 2 106 18 L102 30 Q60 16 18 30 Z" fill="#e3262d"/>
+  <path d="M14 18 L6 14 L10 24 L4 30 L18 30 Z" fill="#b51c22"/>
+  <path d="M106 18 L114 14 L110 24 L116 30 L102 30 Z" fill="#b51c22"/>
+  <text x="60" y="24" text-anchor="middle" font-family="Georgia, serif" font-size="8" font-weight="700" fill="#ffffff" letter-spacing="0.6">SAINT PAUL</text>
+
+  <!-- Escudo -->
+  <path d="M24 32 H96 V74 Q96 104 60 116 Q24 104 24 74 Z" fill="#ffffff"/>
+  <path d="M28 36 H92 V74 Q92 100 60 111 Q28 100 28 74 Z" fill="#e3262d"/>
+  <rect x="28" y="36" width="30" height="34" fill="#1f5a3a"/>
+  <rect x="62" y="36" width="30" height="34" fill="#1f5a3a"/>
+  <rect x="58" y="36" width="4" height="34" fill="#ffffff"/>
+  <rect x="28" y="70" width="64" height="3" fill="#ffffff"/>
+
+  <!-- Llaves cruzadas -->
+  <g stroke="#f2c811" stroke-width="3" stroke-linecap="round" fill="none">
+    <line x1="33" y1="44" x2="53" y2="64"/>
+    <line x1="53" y1="44" x2="33" y2="64"/>
+    <path d="M49 60 l4 0 M51 62 l0 4" />
+    <path d="M37 60 l-4 0 M35 62 l0 4" />
+  </g>
+  <circle cx="33" cy="44" r="3.5" fill="#1f5a3a" stroke="#f2c811" stroke-width="2.5"/>
+  <circle cx="53" cy="44" r="3.5" fill="#1f5a3a" stroke="#f2c811" stroke-width="2.5"/>
+
+  <!-- Globo -->
+  <circle cx="77" cy="53" r="11" fill="#2b7fd9" stroke="#ffffff" stroke-width="1.5"/>
+  <path d="M70 47 q4 -3 7 0 q-1 4 -5 4 q-3 2 -2 6 q-3 -3 0 -10 Z M79 56 q4 -2 6 1 q-1 4 -5 5 Z" fill="#ffffff"/>
+
+  <!-- Libro abierto -->
+  <path d="M42 82 Q51 78 60 82 Q69 78 78 82 V95 Q69 91 60 95 Q51 91 42 95 Z" fill="#ffffff"/>
+  <line x1="60" y1="82" x2="60" y2="95" stroke="#e3262d" stroke-width="1"/>
+  <g stroke="#e3262d" stroke-width="0.8">
+    <line x1="46" y1="85" x2="56" y2="84"/><line x1="46" y1="88" x2="56" y2="87"/>
+    <line x1="64" y1="84" x2="74" y2="85"/><line x1="64" y1="87" x2="74" y2="88"/>
+  </g>
+  <text x="60" y="104" text-anchor="middle" font-family="Georgia, serif" font-size="6" fill="#ffffff">1996</text>
+</svg>
