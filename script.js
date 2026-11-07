@@ -244,8 +244,8 @@ const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').match
 
 // Rol que se escribe y se borra solo, en el idioma elegido
 const ROLES = {
-  es: ['Desarrollador de Software', 'Analista Funcional', 'Analista de Datos'],
-  en: ['Software Developer', 'Functional Analyst', 'Data Analyst'],
+  es: ['Desarrollador de Software', 'AI Engineer', 'Analista Funcional', 'Analista de Datos'],
+  en: ['Software Developer', 'AI Engineer', 'Functional Analyst', 'Data Analyst'],
 };
 const typedRole = document.getElementById('typedRole');
 let typingTimer;
