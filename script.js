@@ -132,6 +132,10 @@ const EN = {
   'Bases de datos': 'Databases',
   'Gestión & Documentación': 'Management & Documentation',
   'Pruebas de software': 'Software Testing',
+  'Inteligencia Artificial': 'Artificial Intelligence',
+  'IA generativa': 'Generative AI',
+  'Agentes de IA': 'AI Agents',
+  'Desarrollo asistido por IA': 'AI-assisted development',
 
   // Proyectos
   'Proyectos destacados': 'Featured projects',
@@ -159,7 +163,6 @@ const EN = {
   'Tecnicatura en Desarrollo de Software': 'Associate Degree in Software Development',
   'Universidad Católica de Cuyo · 2024 — Actualidad': 'Universidad Católica de Cuyo · 2024 — Present',
   'Cursos y certificaciones': 'Courses & certifications',
-  'C# (en curso)': 'C# (in progress)',
   'Idiomas': 'Languages',
   'Español (nativo) · Inglés B1': 'Spanish (native) · English B1',
   'Comprensión oral y escrita avanzada · Instituto Saint Paul': 'Advanced listening and reading comprehension · Instituto Saint Paul',

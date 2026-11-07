@@ -1110,6 +1110,11 @@ main > .stats + section h2 {
   height: 22px;
 }
 
+/* Logos negros: en modo oscuro se invierten para que se vean */
+[data-theme="dark"] .tech img.mono {
+  filter: invert(1);
+}
+
 /* Tarjetas de proyecto: inclinación 3D y luz que sigue al mouse */
 .project {
   position: relative;
