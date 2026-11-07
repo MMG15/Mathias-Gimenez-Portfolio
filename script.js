@@ -91,14 +91,33 @@ const EN = {
   'Empresas IT': 'IT companies',
 
   // Sobre mí
-  'Técnico en Desarrollo de Software con experiencia en análisis funcional, desarrollo de soluciones orientadas a datos e integración de sistemas. Actualmente participo en la modernización del Sistema de Gestión de Laboratorios Graffigna desde Disei SRL, donde lidero relevamientos funcionales, documentación de casos de uso y validación de módulos. Combino mi perfil técnico con habilidades de relevamiento y comunicación con usuarios clave, lo que me permite traducir necesidades de negocio en requerimientos funcionales claros y en implementaciones trazables.':
-    'Software Development Technician with experience in functional analysis, data-driven solutions and systems integration. I am currently working on the modernization of the Laboratorios Graffigna Management System at Disei SRL, where I lead requirements gathering, use case documentation and module validation. I combine my technical background with strong communication with key users, which lets me turn business needs into clear functional requirements and traceable implementations.',
+  'Técnico en Desarrollo de Software con experiencia en desarrollo full stack, análisis funcional, soluciones orientadas a datos y gestión de automatizaciones de procesos mediadas por IA. Actualmente desarrollo SAL, el nuevo sistema de seguimiento de análisis del Laboratorio de Control de Calidad Dr. Alberto Graffigna (UCCuyo), con .NET, React y PostgreSQL. Combino mi perfil técnico con habilidades de relevamiento y comunicación con usuarios clave, lo que me permite traducir necesidades de negocio en requerimientos claros, implementaciones trazables y procesos automatizados.':
+    'Software Development Technician with experience in full stack development, functional analysis, data-driven solutions and AI-driven process automation management. I am currently building SAL, the new analysis tracking system for the Dr. Alberto Graffigna Quality Control Laboratory (UCCuyo), with .NET, React and PostgreSQL. I combine my technical background with requirements gathering and strong communication with key users, which lets me turn business needs into clear requirements, traceable implementations and automated processes.',
   'Relevamiento funcional y documentación de casos de uso': 'Requirements gathering and use case documentation',
   'Análisis de datos e integración de sistemas con SQL, Python y Power BI': 'Data analysis and systems integration with SQL, Python and Power BI',
   'Comunicación con usuarios clave y trazabilidad de proyectos': 'Communication with key users and project traceability',
+  'Gestión de automatizaciones de procesos mediadas por IA': 'AI-driven process automation management',
 
   // Experiencia
-  'Enero 2025 — Presente': 'January 2025 — Present',
+  'Enero 2025 — Diciembre 2025': 'January 2025 — December 2025',
+  'Enero 2026 — Julio 2027': 'January 2026 — July 2027',
+  'Desarrollador Full Stack': 'Full Stack Developer',
+  'Laboratorio de Control de Calidad Dr. Alberto Graffigna (UCCuyo) · San Juan — Proyecto: SAL, Sistema de Seguimiento de Análisis de Laboratorio':
+    'Dr. Alberto Graffigna Quality Control Laboratory (UCCuyo) · San Juan — Project: SAL, Laboratory Analysis Tracking System',
+  'Desarrollo SAL, el sistema que reemplaza al software anterior del laboratorio y cubre el circuito completo: consulta del cliente, presupuesto, recepción de muestras, carga de resultados e informe final.':
+    "I develop SAL, the system replacing the laboratory's previous software, covering the full workflow: client inquiry, quote, sample intake, results entry and final report.",
+  'Diseñé el backend con ASP.NET Core (.NET 10) y Clean Architecture en 4 capas, con Entity Framework Core sobre PostgreSQL y autenticación JWT con permisos por rol.':
+    'Designed the backend with ASP.NET Core (.NET 10) and a 4-layer Clean Architecture, using Entity Framework Core on PostgreSQL and JWT authentication with role-based permissions.',
+  'Construí el frontend con React 19, TypeScript, Vite y Mantine, con navegación por área y búsqueda global.':
+    'Built the frontend with React 19, TypeScript, Vite and Mantine, with area-based navigation and global search.',
+  'Automaticé la importación de consultas que llegan por correo (IMAP) y el envío de presupuestos e informes por email (SMTP).':
+    'Automated the import of inquiries received by email (IMAP) and the delivery of quotes and reports by email (SMTP).',
+  'Implementé la generación de presupuestos, solicitudes e informes en PDF con firma digital y doble validación.':
+    'Implemented PDF generation for quotes, service requests and reports, with digital signatures and two-step approval.',
+  'Desarrollé un portal para clientes donde consultan el estado de sus muestras y descargan los informes aprobados.':
+    'Developed a client portal where customers track their samples and download approved reports.',
+  'Relevé requerimientos con el personal del laboratorio y documenté requisitos, casos de uso y la matriz de permisos por rol.':
+    'Gathered requirements with laboratory staff and documented requirements, use cases and the role permission matrix.',
   'Enero 2024 — Enero 2025': 'January 2024 — January 2025',
   'Desarrollador de Software – Analista Funcional': 'Software Developer – Functional Analyst',
   'Disei SRL · San Juan — Proyecto: Modernización del Sistema de Gestión de Laboratorios Graffigna':
@@ -136,6 +155,7 @@ const EN = {
   'IA generativa': 'Generative AI',
   'Agentes de IA': 'AI Agents',
   'Desarrollo asistido por IA': 'AI-assisted development',
+  'Automatización de procesos con IA': 'AI process automation',
 
   // Proyectos
   'Proyectos destacados': 'Featured projects',
