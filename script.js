@@ -161,11 +161,10 @@ const EN = {
   // Formación
   'Educación': 'Academic background',
   'Tecnicatura en Desarrollo de Software': 'Associate Degree in Software Development',
-  'Universidad Católica de Cuyo · 2024 — Actualidad': 'Universidad Católica de Cuyo · 2024 — Present',
   'Cursos y certificaciones': 'Courses & certifications',
   'Idiomas': 'Languages',
-  'Español (nativo) · Inglés B1': 'Spanish (native) · English B1',
-  'Comprensión oral y escrita avanzada · Instituto Saint Paul': 'Advanced listening and reading comprehension · Instituto Saint Paul',
+  'Español (nativo) · Inglés B2': 'Spanish (native) · English B2',
+  'Inglés en Instituto Saint Paul · Comprensión oral y escrita avanzada': 'English studied at Instituto Saint Paul · Advanced listening and reading comprehension',
 
   // Contacto
   '¿Tenés un proyecto en mente o una oportunidad para conversar? Escribime.':
