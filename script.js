@@ -172,7 +172,7 @@ const EN = {
   'Full Stack Semi Senior': 'Mid-level Full Stack Developer',
   'Consultor BI': 'BI Consultant',
   'Remoto · Híbrido en San Juan · Disponibilidad para relocalización': 'Remote · Hybrid in San Juan · Open to relocation',
-  'Desarrollador de Software · Analista Funcional': 'Software Developer · Functional Analyst',
+  'AI Engineer · Desarrollador de Software · Analista Funcional': 'AI Engineer · Software Developer · Functional Analyst',
   'Conectar en LinkedIn': 'Connect on LinkedIn',
   'Conectemos': "Let's connect",
 };
