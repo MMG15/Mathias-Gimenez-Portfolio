@@ -576,6 +576,12 @@ main > section:first-child h2 {
   font-weight: bold;
 }
 
+.project-links {
+  display: flex;
+  gap: 1.2em;
+  flex-wrap: wrap;
+}
+
 /* 🎓 Formación */
 .formacion-grid {
   display: grid;
